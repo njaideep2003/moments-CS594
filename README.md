@@ -118,7 +118,7 @@ Use this to login and explore:
 - problem: AI might not identify objects correctly and give inaccurate descriptions.
 - solution: users can manually edit the AI generated description.
 
-### Bias in AI Recognition
+### Biased AI Recognition
 - problem: AI models may not be equally accurate across all demographics due to the model training.
 - solution: Manual tagging allows users to refine and correct the results.
 
@@ -131,18 +131,18 @@ Use this to login and explore:
 - Sanitization & validation for user inputs.
 - All sensitive data is managed through environment variables.
 
-### Future Developments
-- Optimize API Calls: Batch process images for better efficiency.
-- Scalability Enhancements: change to cloud-based infrastructure for best performance.
-- Better Tag Management - Improve AI tagging accuracy by model training.
 
 ## Production Challenges
-1. cost of operation
+1. **cost of operation**
 - problem: Frequent API calls might increase the cost over time.
 - solution: Reducing unnecessary API requests by storing AI-generated tags in the database.
   
-2. Infrastructure
+2. **Infrastructure**
 - problem: Hosting a huge number of images increases the storage requirements.
 - solution: Use cloud storage services like AWS/Google cloud/Azure storage
 
 
+## Future Developments
+- **Optimize API Calls:** Batch process images for better efficiency.
+- **Scalability Enhancements:** change to cloud-based infrastructure for best performance.
+- **Better Tag Management:** Improve AI tagging accuracy by model training.
