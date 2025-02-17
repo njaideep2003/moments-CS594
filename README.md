@@ -145,7 +145,4 @@ Use this to login and explore:
 - problem: Hosting a huge number of images increases the storage requirements.
 - solution: Use cloud storage services like AWS/Google cloud/Azure storage
 
-## contributor
-- **Jaideep Nutalapati**
-- **jnuta@uic.edu**
-- Github link: https://github.com/njaideep2003
+
