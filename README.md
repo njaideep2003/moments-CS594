@@ -22,3 +22,130 @@ Example: Searching for "cars" will instantly show all images containing cars wit
 - **Image searching:** AI automatically generates tags for each image, such that we can search by keywords, and matching images appear in no time.
 
 ## Github link and Commit link:
+Repository link: https://github.com/njaideep2003/moments-CS594-Homework-1
+Latest commit link: https://github.com/njaideep2003/moments-CS594-Homework-1/commit/4956dbdf0c55223c7340c46dc98c6e909351d3d4
+
+## Installation Process:
+### 1. Clone the Project  
+```bash
+git clone https://github.com/njaideep2003/moments-CS594-Homework-1.git
+cd moments
+```
+
+### 2. Set Up a Virtual Environment  
+
+For macOS/Linux:  
+```sh
+python3 -m venv myenv  
+source myenv/bin/activate  
+```  
+
+For Windows:  
+```sh
+python -m venv myenv  
+myenv\Scripts\activate  
+```  
+
+### 3. Install Dependencies  
+```sh
+pip install -r requirements.txt  
+```
+
+## Setting up the API Key
+Moments relies on **Azure Vision API** to analyze images. Here’s how to connect it:  
+
+1. **Create an Azure Computer Vision account**  
+   - Sign up at your Azure Portal. 
+   - Generate an API Key and Endpoint URL  
+
+2. **Save your credentials securely**  
+   - In your root directory, create a `.env` file:  
+     ```sh
+     AZURE_VISION_API_KEY="your-api-key-here"  
+     AZURE_VISION_ENDPOINT="your-endpoint-here"  
+     ```  
+   - Keep this file private—it should never be pushed to GitHub. 
+
+## Run the App Locally  
+
+To start the Flask server, run:  
+```sh
+flask run  
+```  
+
+Then, open:  
+[http://127.0.0.1:5000](http://127.0.0.1:5000)  
+
+## How to Use Moments  
+
+### Upload and Organize the Photos  
+1. Click "Upload"  
+2. Select an image  
+3. AI automatically generates alt text and searchable tags  
+
+### Find Photos Instantly  
+- Type a keyword into the search bar to find images based on AI-generated tags  
+- Example: Searching "cars" will show all beach-related photos  
+
+### Edit and Customize the Tags  
+- Open an image  
+- Click "Add Tags"  
+- Enter custom tags and save them 
+
+### Check AI-Generated Descriptions  
+- Right-click an image → Click "Inspect Element"  
+- Locate the `<img>` tag to see the **alt attribute**  
+
+## Given demo account
+
+Use this to login and explore:  
+
+- **Email:** admin@helloflask.com  
+- **Password:** moments 
+
+## Technologies used
+
+- **Python & Flask** – backend work  
+- **SQLAlchemy** – database management  
+- **Azure Vision API** – AI-powered image recognition  
+- **Bootstrap 5** – Frontend work 
+- **WTForms** – Secure form handling  
+- **Flask-Login** – Authentication and session management
+
+## Potential Harms
+
+### Incorrct Image description
+- problem: AI might not identify objects correctly and give inaccurate descriptions.
+- solution: users can manually edit the AI generated description.
+
+### Bias in AI Recognition
+- problem: AI models may not be equally accurate across all demographics due to the model training.
+- solution: Manual tagging allows users to refine and correct the results.
+
+### Scalability
+- problem: Too many uploads at a time can slow API performance.
+- solution: Implement caching and background processing for smooth performance.
+
+### security practices
+- credentials such as api keys shouldn't be committed to GitHub.
+- Sanitization & validation for user inputs.
+- All sensitive data is managed through environment variables.
+
+### Future Developments
+- Optimize API Calls: Batch process images for better efficiency.
+- Scalability Enhancements: change to cloud-based infrastructure for best performance.
+- Better Tag Management - Improve AI tagging accuracy by model training.
+
+## Production Challenges
+1. cost of operation
+- problem: Frequent API calls might increase the cost over time.
+- solution: Reducing unnecessary API requests by storing AI-generated tags in the database.
+  
+2. Infrastructure
+- problem: Hosting a huge number of images increases the storage requirements.
+- solution: Use cloud storage services like AWS/Google cloud/Azure storage
+
+## contributor
+- **Jaideep Nutalapati**
+- **jnuta@uic.edu**
+- Github link: https://github.com/njaideep2003
