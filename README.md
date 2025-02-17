@@ -22,8 +22,8 @@ Example: Searching for "cars" will instantly show all images containing cars wit
 - **Image searching:** AI automatically generates tags for each image, such that we can search by keywords, and matching images appear in no time.
 
 ## Github link and Commit link:
-Repository link: https://github.com/njaideep2003/moments-CS594-Homework-1
-Latest commit link: https://github.com/njaideep2003/moments-CS594-Homework-1/commit/4956dbdf0c55223c7340c46dc98c6e909351d3d4
+- Repository link: https://github.com/njaideep2003/moments-CS594-Homework-1
+- Latest commit link: https://github.com/njaideep2003/moments-CS594-Homework-1/commit/4956dbdf0c55223c7340c46dc98c6e909351d3d4
 
 ## Installation Process:
 ### 1. Clone the Project  
